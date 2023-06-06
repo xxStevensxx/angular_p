@@ -1,0 +1,15 @@
+#aPropos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 20em;
+    min-height: 75vh;
+    margin: 1%;
+    box-shadow: black 5px 4px 20px;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+#aPropos p{
+    position: relative;
+    top: 45%;
+    text-align: center;
+}

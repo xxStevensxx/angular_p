@@ -1,0 +1,7 @@
+#projet_list_wrapper{
+    position: relative;
+}
+
+#projet_list_carousel{
+    display: flex;
+}

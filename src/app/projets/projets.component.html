@@ -1,0 +1,9 @@
+
+    <div class="card">
+        <h2>{{projet.title}}</h2>
+        <P>{{projet.description}}</P>
+        <img [src]="projet.imageUrl" [alt]="projet.title">
+        <p>
+            <button (click)="onAddLike()">j'aime 👌 <span [ngStyle]="{ color: 'rgb(0, ' + projet.like + ', 0)' }">{{projet.like}}</span></button>
+        </p>
+    </div>

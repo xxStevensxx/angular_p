@@ -1,0 +1,20 @@
+header{
+    text-align: center;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 1%;
+}
+
+#menu{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.listeMenu{
+    text-decoration: none;
+    color: red;
+}
+
+.listeMenu:hover{
+    background-color: black;
+}
