@@ -1,7 +1,17 @@
+
 #projet_list_wrapper{
-    position: relative;
+    margin-top: 5%;
 }
 
-#projet_list_carousel{
-    display: flex;
-}
+.cards {
+    /* width: 56%; */
+    margin: 1%;
+    height: 525px;
+
+    /* margin-right: 10px;
+    border-radius: 5px; */
+    counter-increment: cards;
+  }
+  
+
+  

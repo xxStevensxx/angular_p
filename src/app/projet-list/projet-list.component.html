@@ -1,5 +1,4 @@
-<div id="projet_list_wrapper">
-    <div id="projet_list_carousel">
-        <app-projets *ngFor="let projet of projets" [projet]="projet"></app-projets>
-    </div>
-</div>
+<div id="projet_list_wrapper" class="gallery js-flickity"
+   data-flickity-options='{ "wrapAround": true }'>
+     <app-projets class="cards" *ngFor="let projet of projets" [projet]="projet"></app-projets>
+ </div>
