@@ -9,6 +9,9 @@ import { AProposComponent } from './a-propos/a-propos.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { FooterComponent } from './footer/footer.component';
+import { register } from 'swiper/element/bundle';
+
+register();
 
 
 @NgModule({
