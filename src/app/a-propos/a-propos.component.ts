@@ -9,10 +9,5 @@ import { Apropos } from '../models/Apropos.model';
 export class AProposComponent implements OnInit  {
  @Input() apropos!: Apropos;
 
-  ngOnInit(){
-    this.apropos={  
-        introduction: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        aPropos: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam facilis, ea repellat suscipit excepturi rem eveniet facere commodi magni nihil in veritatis. Laudantium, quo vitae."
-    }
-  }
+  ngOnInit(){}
 }
