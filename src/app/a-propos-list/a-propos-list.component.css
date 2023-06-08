@@ -1,0 +1,46 @@
+#aPropos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 20em;
+    min-height: 50vh;
+    margin: 5%;
+    box-shadow: black 25px 24px 30px;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+#presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+
+#circle{
+    height: 140px;
+    width: 140px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 8px solid white;
+    position: relative;
+    bottom: 10%;
+}
+
+#icon_of_me{
+    font-size: 7vh;
+    position: relative;
+    left: 27%;
+    top: 50%;
+}
+
+#aPropos_right{
+    position: relative;
+    top: 4%;
+    overflow-y: scroll;
+    height: 90%;
+}
+
+#aPropos_right::-webkit-scrollbar{
+    display: none;
+}

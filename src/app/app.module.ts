@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { FooterComponent } from './footer/footer.component';
 import { register } from 'swiper/element/bundle';
+import { AProposListComponent } from './a-propos-list/a-propos-list.component';
 
 register();
 
@@ -23,6 +24,7 @@ register();
     AProposComponent,
     LandingPageComponent,
     FooterComponent,
+    AProposListComponent,
   ],
   imports: [
     BrowserModule,

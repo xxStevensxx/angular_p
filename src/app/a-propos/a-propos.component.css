@@ -1,15 +1,37 @@
-#aPropos{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    height: 20em;
-    min-height: 75vh;
-    margin: 1%;
-    box-shadow: black 5px 4px 20px;
+#content_timeline{
+    margin: 0 auto;
+    width: 95%;
+    height: 250px;
     background-color: rgb(0, 0, 0, 0.4);
+    box-shadow: black 25px 24px 25px;
+    box-sizing: border-box;
 }
 
-#aPropos p{
+#content_timeline img{
+    border: solid 5px  black;
     position: relative;
-    top: 45%;
+    float: left;
+    height: 220px;
+    width: 220px;
+}
+
+#content_timeline h2{
+    text-align: center;
+    padding: 1%;
+}
+
+#content_timeline span{
+    display: flex;
+    justify-content: center;
+    position: relative;
     text-align: center;
 }
+
+
+#content_timeline p{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+

@@ -1,0 +1,13 @@
+<div id="aPropos">
+    <div id="aPropos_left">
+        <div id="presentation">
+            <span id="circle">
+                <i id="icon_of_me" class="fa-sharp fa-regular fa-user fa-bounce fa-2xl"></i>
+            </span>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+    <div id="aPropos_right">
+        <app-a-propos class="content_timeline" *ngFor="let contentFormation of apropos" [apropos]="contentFormation"></app-a-propos>
+    </div>
+</div>

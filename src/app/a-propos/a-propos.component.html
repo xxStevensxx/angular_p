@@ -1,8 +1,11 @@
-<div id="aPropos">
-    <div id="aPropos_left">
-        <p>{{apropos.introduction}}</p>
+    <div>
+        <div id="vertical_line_timeline"></div>
+        <div id="content_timeline">
+            <figure>
+                <img [src]="apropos.imageUrl" alt="*">
+            </figure>
+            <h2>{{apropos.titreFormation}}</h2>
+            <span>{{apropos.annee}}</span>
+            <p>{{apropos.description}}</p>
+        </div>
     </div>
-    <div id="aPropos_right">
-        <p>{{apropos.aPropos}}</p>
-    </div>
-</div>
