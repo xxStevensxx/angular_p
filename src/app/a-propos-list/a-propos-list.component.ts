@@ -16,62 +16,62 @@ export class AProposListComponent {
         titreFormation:'Ma formation',
         annee: Date.now(),
         description:'lorem*7',
-        // imageUrl:"../assets/images/landing.webp"
+        imageUrl:'assets/images/school.webp'
       },
       {
         titreFormation:'Ma formation',
         annee: Date.now(),
         description:'lorem*7',
-        imageUrl:''
+        imageUrl:'assets/images/school.webp'
       }
       ,
       {
         titreFormation:'Ma formation',
         annee: Date.now(),
         description:'lorem*7',
-        imageUrl:''
+        imageUrl:'assets/images/school.webp'
       }
       ,
       {
         titreFormation:'Ma formation',
         annee: Date.now(),
         description:'lorem*7',
-        imageUrl:''
+        imageUrl:'assets/images/school.webp'
       }
       ,
       {
         titreFormation:'Ma formation',
         annee: Date.now(),
         description:'lorem*7',
-        imageUrl:''
+        imageUrl:'assets/images/school.webp'
       }
       ,
       {
         titreFormation:'Ma formation',
         annee: Date.now(),
         description:'lorem*7',
-        imageUrl:''
+        imageUrl:'assets/images/school.webp'
       }
       ,
       {
         titreFormation:'Ma formation',
         annee: Date.now(),
         description:'lorem*7',
-        imageUrl:''
+        imageUrl:'assets/images/school.webp'
       }
       ,
       {
         titreFormation:'Ma formation',
         annee: Date.now(),
         description:'lorem*7',
-        imageUrl:''
+        imageUrl:'assets/images/school.webp'
       }
       ,
       {
         titreFormation:'Ma formation',
         annee: Date.now(),
         description:'lorem*7',
-        imageUrl:''
+        imageUrl:'assets/images/school.webp'
       }
     ]
   } 
