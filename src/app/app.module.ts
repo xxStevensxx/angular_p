@@ -11,6 +11,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { FooterComponent } from './footer/footer.component';
 import { register } from 'swiper/element/bundle';
 import { AProposListComponent } from './a-propos-list/a-propos-list.component';
+import { CompetancesComponent } from './competances/competances.component';
+import { CompetancesListComponent } from './competances-list/competances-list.component';
 
 register();
 
@@ -25,6 +27,8 @@ register();
     LandingPageComponent,
     FooterComponent,
     AProposListComponent,
+    CompetancesComponent,
+    CompetancesListComponent,
   ],
   imports: [
     BrowserModule,

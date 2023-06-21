@@ -1,0 +1,99 @@
+#skills{
+    margin: 5% ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.skill{
+    margin: 0 auto;
+    height: 50vh;
+    width: 30%;
+    background-color: rgb(29,30,34);
+}
+
+.skill:hover h1{
+    transition: all 2s ;
+    background-color: gold;
+    color: black;
+
+}
+
+.skill:hover i{
+    transition: all 2s ;
+    rotate: 360deg;
+    animation: fly forwards;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+@keyframes fly{
+
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateY(10px);
+    }
+    20%{
+        transform: translateY(-85px);
+    }
+    30%{
+        transform: translateY(-85px);
+    }
+    50%{
+        transform: translateY(-85px);
+    }
+    70%{
+        transform: translateY(-85px);
+    }
+    100%{
+        transform: translateY(-85px);
+        transition: 1s ease-in-out;
+        color: black;
+    }
+}
+
+.skill_type{
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    height: 8vh;
+}
+
+.ligne{
+    height: 10px;
+    width: 100%;
+    background-color: white;
+}
+
+.ligne_color{
+    height: 12px;
+    width: 100%;
+    background-color: gold;
+}
+
+.shape{
+    position: relative;
+    left: 5%;
+    bottom: 4%;
+    width: 80px;
+    height: 100px;
+    background-color: rgb(29,30,34) ;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    border: solid 8px white;
+
+    
+}
+
+.shape i{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 45%;
+    font-size: 4em;
+    color: gold;
+    rotate: 180deg;
+}

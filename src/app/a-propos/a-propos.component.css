@@ -8,7 +8,8 @@
 }
 
 #content_timeline img{
-    border: solid 5px  black;
+    margin-top: 1%;
+    border-radius: 25%;
     position: relative;
     float: left;
     height: 220px;
