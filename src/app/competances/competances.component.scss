@@ -1,99 +1,130 @@
-#skills{
-    margin: 5% ;
+.content_competance{
+    margin-top: 5%;
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: center;
-
 }
 
-.skill{
+.card_competance{
+    position: relative;
+    background-color: rgb(30,31,38);
+    height: 550px;
+    width: 20%;
+    box-shadow: black 25px 20px 25px;
+    overflow: hidden;
+    margin-right: 5% ;
+}
+
+.card_competance::before{
+    content: '';
+    position:absolute ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-280deg);
+    height: 260%;
+    width: 230%;
+    background-image: conic-gradient(orange 0deg, #ff00bb 90deg,
+                                     transparent 130deg, transparent 180deg,
+                                     #4530FF 180deg, #4530FF 270deg,
+                                     transparent 310deg, transparent 360deg);
+    transition: transform 2s;  
+}
+
+.card_competance:hover::before{
+    transform: translate(-50%, -50%) rotate(-100deg);
+}
+
+.competance{
+    position: absolute;
+    top: 2%;
+    left: 1.5%;
+    background-color: rgb(30,31,38);
+    height: 525px;
+    width: 97%;
+}
+
+
+.competance h1{
+    transition: 2s;
+    color:#4530FF;
+    position: relative;
+    left:5%;
+}
+
+
+.competance:hover h1{
+    transition: 2s;
+    color: #ff00bb;
+}
+
+
+.competance p{
+    position: relative;
+    font-size: 20px;
+    left: 5%;
+    transition: 2s;
+    color: transparent;
+}
+
+.competance:hover p{
+    transition: 2s;
+    color: #ff00bb;
+}
+
+
+.progress_bar{
+    transition: 1.5s;
+    display: flex;
+    justify-content: left;
     margin: 0 auto;
-    height: 50vh;
-    width: 30%;
-    background-color: rgb(29,30,34);
-}
-
-.skill:hover h1{
-    transition: all 2s ;
-    background-color: gold;
-    color: black;
+    margin-top: 5%;
+    height: 20px;
+    width: 80%;
+    border: transparent solid 5px;
+    border-radius: 25px;
 
 }
 
-.skill:hover i{
-    transition: all 2s ;
-    rotate: 360deg;
-    animation: fly forwards;
-    animation-duration: 4s;
-    animation-delay: 2s;
+.line{
+    transition: 2s;
+    background: transparent;
+    animation: progress_back 1.5s cubic-bezier(0,0,0,0) ;
+    color: transparent;
 }
 
-@keyframes fly{
+.competance:hover .progress_bar{
+    transition: 1.5s;
+    background: rgb(255,0,187, 0.4);
+
+}   
+
+.competance:hover .line{
+    transition: 2s;
+    background: white;
+    box-shadow: #ff00bb 0px 0px 20px 5px;
+    animation: progress 1.5s forwards cubic-bezier(0,0,0,0);
+    border-radius: 25px;
+    color: #4530FF;
+}
+
+@keyframes progress {
 
     0%{
-        transform: translateX(0);
-    }
-    10%{
-        transform: translateY(10px);
-    }
-    20%{
-        transform: translateY(-85px);
-    }
-    30%{
-        transform: translateY(-85px);
-    }
-    50%{
-        transform: translateY(-85px);
-    }
-    70%{
-        transform: translateY(-85px);
+        width: 0%;
     }
     100%{
-        transform: translateY(-85px);
-        transition: 1s ease-in-out;
-        color: black;
+        width: 80%;
     }
-}
-
-.skill_type{
-    margin: 0;
-    display: flex;
-    justify-content: end;
-    height: 8vh;
-}
-
-.ligne{
-    height: 10px;
-    width: 100%;
-    background-color: white;
-}
-
-.ligne_color{
-    height: 12px;
-    width: 100%;
-    background-color: gold;
-}
-
-.shape{
-    position: relative;
-    left: 5%;
-    bottom: 4%;
-    width: 80px;
-    height: 100px;
-    background-color: rgb(29,30,34) ;
-    border-bottom-left-radius: 40%;
-    border-bottom-right-radius: 40%;
-    border: solid 8px white;
-
     
 }
 
-.shape i{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 45%;
-    font-size: 4em;
-    color: gold;
-    rotate: 180deg;
+@keyframes progress_back {
+
+    0%{
+        width: 80%;
+    }
+    100%{
+        width: 0%;
+    }
+    
 }
