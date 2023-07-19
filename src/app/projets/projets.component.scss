@@ -1,27 +1,31 @@
   .card {
-    height: 100%;
-    width: 500px;
-    // border-radius: 5%;
+    position: relative;
+    top: 2%;
+    height: 95%;
+    width: 95%;
     box-sizing: border-box;
     padding: 2%;
-    box-shadow: black 25px 20px 25px;
-    background-color: rgb(0, 0, 0, 0.6);
+    background-color: rgb(30,31,38);
     margin: 0 auto;
-    border: 4px solid transparent;
-    border-image: linear-gradient(65deg, #ff0, #f0f, #f00, #0ff);
-    border-image-slice: 1;
+
     img {
       border-radius: 5%;
       width: 100%;
     }
     h2 {
+      transition: 2s;
       margin-bottom: 0;
+      color: white;
+      text-shadow:  0px 0px 25px  #4530FF;
+
     }
     p {
+      transition: 2s;
       font-weight: 300;
       font-size: 16px;
+      color: transparent;
     }
-  
+
     button {
       background-color: transparent;
       box-sizing: border-box;
@@ -41,14 +45,60 @@
     }
   }
 
-/* Blur + Gray Scale */
-img {
+
+  .content_card:hover h2{
+    transition: 2s;
+    color: white;
+    text-shadow:  0px 0px 25px  orange;
+  }
+
+  .content_card:hover p{
+    transition: 2s;
+    color: white;
+    text-shadow:  0px 0px 25px  orange;
+  }
+
+
+  .content_card{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 500px;
+    background-color: rgb(30,31,38);
+    box-shadow: black 25px 20px 25px;
+
+}
+
+  .content_card::before{
+    content: '';
+    position:absolute ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-280deg);
+    height: 150%;
+    width: 150%;
+    background-image: conic-gradient(orange 0deg, #ff00bb 90deg,
+                                     transparent 130deg, transparent 180deg,
+                                     #4530FF 180deg, #4530FF 270deg,
+                                     transparent 310deg, transparent 360deg);
+    transition: transform 2s;  
+  }
+
+  .content_card:hover::before{
+    transform: translate(-50%, -50%) rotate(-100deg);
+  }
+
+
+  
+.content_card:hover img {
 	-webkit-filter: grayscale(0) blur(0);
 	filter: grayscale(0) blur(0);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
-img:hover {
-	-webkit-filter: grayscale(100%) blur(3px);
-	filter: grayscale(100%) blur(3px);
+
+img {
+  transition: .3s ease-in-out;
+	-webkit-filter: grayscale(100%) blur(10px);
+	filter: grayscale(100%) blur(5px);
 }

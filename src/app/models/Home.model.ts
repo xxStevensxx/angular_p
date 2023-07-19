@@ -1,6 +1,6 @@
 export class Home{
 
-    imageUrl!: string;
+    imageUrl?: string;
     alt?: string;
     description!: string;
 }
