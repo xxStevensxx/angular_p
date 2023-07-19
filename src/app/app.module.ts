@@ -13,6 +13,7 @@ import { register } from 'swiper/element/bundle';
 import { AProposListComponent } from './a-propos-list/a-propos-list.component';
 import { CompetancesComponent } from './competances/competances.component';
 import { CompetancesListComponent } from './competances-list/competances-list.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 register();
 
@@ -32,7 +33,8 @@ register();
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
