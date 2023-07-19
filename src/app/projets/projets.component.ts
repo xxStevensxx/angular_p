@@ -11,6 +11,7 @@ export class ProjetsComponent{
   @Input() projet!: Projet;
 
   onAddLike(){
-    this.projet.like ++;
+    let nb = 100;
+    this.projet.like++;
   }
 }

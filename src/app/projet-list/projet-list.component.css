@@ -4,14 +4,8 @@
 }
 
 .cards {
-    /* width: 56%; */
     margin: 1%;
     height: 525px;
-
-    /* margin-right: 10px;
-    border-radius: 5px; */
     counter-increment: cards;
   }
-  
-
   
