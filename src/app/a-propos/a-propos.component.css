@@ -76,4 +76,41 @@
 
   @media only screen and (min-device-width : 1224px) and (max-device-width : 1823px){
 
+    .timeline img{
+        margin-top: 3%;
+        height: 170px;
+        width: 200px;
+    }
 }
+
+  /*************** small destop and laptop ***************/
+
+      @media only screen and (min-width : 993px) and (max-device-width : 1200px) {
+
+    .timeline img{
+        margin-top: 5%;
+        height: 160px;
+        width: 190px;
+    }
+}
+
+    /*************** Tablette ***************/
+
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+    .timeline img{
+        margin-top: 3%;
+        height: 145px;
+        width: 175px;
+    }
+
+    .timeline{
+        width: 95%;
+        height: 200px;
+    }
+
+    .vertical_line_timeline{
+        top: 3%;
+        height: 189px;
+    }
+  }

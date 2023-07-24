@@ -35,6 +35,7 @@
 }
 
 #aPropos_right{
+    
     position: relative;
     top: 4%;
     overflow-y: scroll;
@@ -45,7 +46,76 @@
     display: none;
 }
 
+/*************** destop and laptop ***************/
 
-@media only screen and (min-device-width : 1224px) and (max-device-width : 1823px){
- 
+  @media only screen and (min-width : 1224px) and (max-device-width : 1825px) {
+    #circle{
+        height: 120px;
+        width: 120px;
+        border: 6px solid white;
+    }
+
+    #icon_of_me{
+    font-size: 6vh;
+    position: relative;
+    left: 33%;
+    top: 45%;
 }
+
+#aPropos{
+    grid-template-columns: 35% 65%;
+    height: 30em;
+
+    }   
+}
+
+
+  /*************** small destop and laptop ***************/
+
+      @media only screen and (min-width : 993px) and (max-device-width : 1200px) {
+
+        #aPropos{
+            margin-bottom: 15%;
+            grid-template-columns: 30% 70%;
+            height: 25em;
+
+        }  
+
+        #circle{
+            height: 100px;
+            width: 100px;
+            border: 4px solid white;
+        }
+
+        #icon_of_me{
+            font-size: 5.5vh;
+            position: relative;
+            left: 36%;
+            top: 40%;
+        }
+
+      }
+
+/*************** Tablette ***************/
+
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+        #aPropos{
+            margin-bottom: 15%;
+            grid-template-columns: 30% 70%;
+            height: 25em;
+        }  
+
+        #circle{
+            height: 80px;
+            width: 80px;
+            border: 4px solid white;
+        }
+
+        #icon_of_me{
+            font-size: 4.5vh;
+            position: relative;
+            left: 36%;
+            top: 37%;
+        }
+  }
+  

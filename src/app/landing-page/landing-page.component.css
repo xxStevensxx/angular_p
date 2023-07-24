@@ -81,12 +81,43 @@
     }
   }
 
+  /*************** destop and laptop ***************/
+
   @media only screen and (min-width : 1224px) and (max-device-width : 1825px){
     /* Styles pour cette Media Queries */
     #spaceShip{
-  
       width: 100px;
       height: 100px;
-  
+    }
+
+    #rocket_fire{
+      top: 23%;
+
     }
   }
+
+  /*************** small destop and laptop ***************/
+
+      @media only screen and (min-width : 993px) and (max-device-width : 1200px) {
+  
+      #spaceShip{
+        width: 80px;
+        height: 80px;
+    }
+  }
+
+
+      /*************** Tablette ***************/
+
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+    #spaceShip{
+      width: 70px;
+      height: 70px;
+    }
+
+    #rocket_fire{
+      top: 21%;
+      width: 1.5%;
+    }
+}

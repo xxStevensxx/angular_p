@@ -88,8 +88,6 @@
     transform: translate(-50%, -50%) rotate(-100deg);
   }
 
-
-  
 .content_card:hover img {
 	-webkit-filter: grayscale(0) blur(0);
 	filter: grayscale(0) blur(0);
@@ -102,3 +100,31 @@ img {
 	-webkit-filter: grayscale(100%) blur(10px);
 	filter: grayscale(100%) blur(5px);
 }
+
+
+
+/*************** destop and laptop ***************/
+
+  @media only screen and (min-width : 1224px) and (max-device-width : 1825px) {
+    
+    img{
+      height: 55%;
+    }
+
+    button{
+      margin-top: 1%  !important;
+    }
+  }
+
+    /*************** small destop and laptop ***************/
+
+  @media only screen and (min-width : 993px) and (max-device-width : 1200px) {
+    img{
+      height: 50%;
+    }
+
+    button{
+      // height: 20px;
+      margin-top: 0%  !important;
+    }
+  }

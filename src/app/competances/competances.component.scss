@@ -133,3 +133,36 @@
     }
     
 }
+
+/*************** destop and laptop ***************/
+
+  @media only screen and (min-width : 1224px) and (max-device-width : 1825px) {
+   
+    .card_competance{
+        height: 450px;
+        width: 30%;
+        margin-right: 2% ;
+    }
+
+    .competance{
+        height: 430px;
+    }
+  }
+
+    /*************** small destop and laptop ***************/
+
+      @media only screen and (min-width : 993px) and (max-device-width : 1200px) {
+        .card_competance{
+            height: 400px;
+            width: 50%;
+            margin-right: 1% ;
+        }   
+
+        .competance{
+            height: 385px;
+        }
+
+        .progress_bar{
+            height: 12px;
+}
+    }
