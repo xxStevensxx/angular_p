@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { Projet } from '../models/Projet.model';
 
 @Component({
-  selector: 'app-projet-list',
-  templateUrl: './projet-list.component.html',
-  styleUrls: ['./projet-list.component.css']
+  selector: 'app-projets-list',
+  templateUrl: './projets-list.component.html',
+  styleUrls: ['./projets-list.component.css']
 })
-export class ProjetListComponent {
+export class ProjetsListComponent {
   projets!:Projet[];
 
   ngOnInit(){

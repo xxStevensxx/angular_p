@@ -1,5 +1,5 @@
 
-#projet_list_wrapper{
+#projets_list_wrapper{
     margin-top: 5%;
 }
 
@@ -18,7 +18,7 @@
 
   @media only screen and (min-width : 1224px) and (max-device-width : 1825px) {
    
-    #projet_list_wrapper{
+    #projets_list_wrapper{
         margin-top: 3%;
     }
 
@@ -32,7 +32,7 @@
     /*************** small destop and laptop ***************/
 
       @media only screen and (min-width : 993px) and (max-device-width : 1200px) {
-        #projet_list_wrapper{
+        #projets_list_wrapper{
           margin-top: 5%;
       }
 
