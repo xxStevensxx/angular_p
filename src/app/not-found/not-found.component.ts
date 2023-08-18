@@ -1,16 +1,13 @@
 import { Component, Input } from '@angular/core';
 import { Stars } from '../models/Stars.model';
 
-
 @Component({
-  selector: 'app-landing-page',
-  templateUrl: './landing-page.component.html',
-  styleUrls: ['./landing-page.component.css']
+  selector: 'app-not-found',
+  templateUrl: './not-found.component.html',
+  styleUrls: ['./not-found.component.css']
 })
-
-export class LandingPageComponent{
- @Input() stars!: Stars[];
-
+export class NotFoundComponent {
+  @Input() stars!: Stars[];
 
   ngOnInit(){
 
@@ -51,5 +48,6 @@ export class LandingPageComponent{
           console.log(space_home);
     }
     rain();
-  }  
+  }
+
 }
