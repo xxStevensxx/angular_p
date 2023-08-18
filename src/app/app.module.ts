@@ -14,6 +14,7 @@ import { AProposListComponent } from './a-propos-list/a-propos-list.component';
 import { CompetenceComponent } from './competence/competence.component';
 import { CompetencesListComponent } from './competences-list/competences-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 register();
 
@@ -30,6 +31,7 @@ register();
     AProposListComponent,
     CompetenceComponent,
     CompetencesListComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
