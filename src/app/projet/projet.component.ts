@@ -2,12 +2,12 @@ import { Component, Input } from '@angular/core';
 import { Projet } from '../models/Projet.model';
 
 @Component({
-  selector: 'app-projets',
-  templateUrl: './projets.component.html',
-  styleUrls: ['./projets.component.scss']
+  selector: 'app-projet',
+  templateUrl: './projet.component.html',
+  styleUrls: ['./projet.component.scss']
 })
 
-export class ProjetsComponent{
+export class ProjetComponent{
   @Input() projet!: Projet;
 
   onAddLike(){

@@ -1,16 +1,15 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes } from '@angular/router';
-import { ProjetListComponent } from './projet-list/projet-list.component';
-import { AProposComponent } from './a-propos/a-propos.component';
+import { ProjetsListComponent } from './projets-list/projets-list.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { AProposListComponent } from './a-propos-list/a-propos-list.component';
-import { CompetancesComponent } from './competances/competances.component';
+import { CompetenceComponent } from './competence/competence.component';
 
 const routes: Routes = [
     {path: "home", component: LandingPageComponent},
-    {path: "projets", component: ProjetListComponent},
+    {path: "projets", component: ProjetsListComponent},
     {path: "aPropos", component: AProposListComponent },
-    {path: "competances", component: CompetancesComponent}
+    {path: "competances", component: CompetenceComponent}
 ];
 
 @NgModule({
