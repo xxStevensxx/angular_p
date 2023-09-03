@@ -19,6 +19,10 @@ export class LoadfileserviceComponent {
     jscript.src = scriptSource;
 
     document.body.appendChild(jscript);
+    for (let index = 0; index < document.getElementsByTagName("script").length; index++) {
+      if(document.getElementsByTagName("script")[index])
+      console.log(document.getElementsByTagName("script")[index]);      
+    }
 
   }
 

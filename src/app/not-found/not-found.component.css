@@ -19,45 +19,6 @@
     top: 30%;
     transition: 1s ease;
   }
-
-  i{
-    font-size: 7em;
-    position: absolute;
-    rotate: -130deg;
-    left: 40%;
-    top: 20%;
-    
-  }
-
-  #space_home a:hover{
-    color: gold;
-    text-decoration: underline;
-    transition: 1s ease;
-  }
-
-
-    ::ng-deep.stars{
-      z-index: -1;
-      position: absolute;
-      height: 200px;
-      background: linear-gradient(transparent, silver);
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
-      animation: shootingStars 5s linear infinite;
-    }
-  
-    ::ng-deep.stars:nth-child(3n+1){
-      background: linear-gradient(transparent, gold);
-    }
-  
-    ::ng-deep.stars:nth-child(3n+2){
-      background: linear-gradient(transparent, white);
-    }
-  
-    ::ng-deep.stars:nth-child(3n+3){
-      background: linear-gradient(transparent, black);
-    }
-  
   
   @keyframes shootingStars {
       0%{
