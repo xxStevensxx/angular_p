@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LoadfileserviceComponent } from '../loadfileservice/loadfileservice.component';
+import { rainstars } from 'src/assets/js/rainstars';
 
 
 @Component({
@@ -9,11 +9,8 @@ import { LoadfileserviceComponent } from '../loadfileservice/loadfileservice.com
 })
 
 export class LandingPageComponent{
-constructor(private loadfile: LoadfileserviceComponent){};
 
   ngOnInit(){
-
-    this.loadfile.loadScript("assets/js/rainstars.js", "text/javascript")
-
+    rainstars();
   }  
 }

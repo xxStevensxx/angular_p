@@ -1,7 +1,7 @@
+exports.rainstars = function(){
 
-let space_home = document.getElementById("space_home");
-    
-function rain(){
+    let space_home = document.getElementById("space_home");
+
   let amount = 100;
   let i = 0;
 
@@ -26,4 +26,3 @@ function rain(){
       }
       console.log(space_home);
 }
-rain();
