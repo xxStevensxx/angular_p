@@ -16,6 +16,7 @@ import { CompetencesListComponent } from './competences-list/competences-list.co
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { LoadfileserviceComponent } from './loadfileservice/loadfileservice.component';
+import { ContactComponent } from './contact/contact.component';
 
 register();
 
@@ -33,7 +34,8 @@ register();
     CompetenceComponent,
     CompetencesListComponent,
     NotFoundComponent,
-    LoadfileserviceComponent
+    LoadfileserviceComponent,
+    ContactComponent
     ],
   imports: [
     BrowserModule,
