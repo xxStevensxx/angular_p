@@ -53,7 +53,12 @@ p{
     left:5%;
 }
 
-#rsx{
-    display: grid;
-    grid-template-columns: repeat(1fr);
+#reseaux{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rsx{
+    margin: 5%;
 }
