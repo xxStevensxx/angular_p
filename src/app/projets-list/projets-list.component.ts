@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Projet } from '../models/Projet.model';
+import { LoadfileserviceComponent } from '../loadfileservice/loadfileservice.component';
 
 @Component({
   selector: 'app-projets-list',
@@ -7,9 +8,12 @@ import { Projet } from '../models/Projet.model';
   styleUrls: ['./projets-list.component.css']
 })
 export class ProjetsListComponent {
+  constructor(private loadservice: LoadfileserviceComponent){}
   projets!:Projet[];
 
   ngOnInit(){
+
+      this.loadservice.loadScript("assets/libs/flickity.pkgd.min.js", "text/javascript");
 
     this.projets = [
       {

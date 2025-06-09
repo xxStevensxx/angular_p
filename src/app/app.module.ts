@@ -15,6 +15,8 @@ import { CompetenceComponent } from './competence/competence.component';
 import { CompetencesListComponent } from './competences-list/competences-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { LoadfileserviceComponent } from './loadfileservice/loadfileservice.component';
+import { ContactComponent } from './contact/contact.component';
 
 register();
 
@@ -32,13 +34,15 @@ register();
     CompetenceComponent,
     CompetencesListComponent,
     NotFoundComponent,
-  ],
+    LoadfileserviceComponent,
+    ContactComponent
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [LoadfileserviceComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { 
